@@ -1,4 +1,4 @@
 User-agent: *
-Sitemap: http://localhost:2368/sitemap.xml
+Sitemap: https://adsight.ca/blog/sitemap.xml
 Disallow: /ghost/
 Disallow: /p/
