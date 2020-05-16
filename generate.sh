@@ -18,8 +18,8 @@ wget --recursive --no-host-directories --directory-prefix=. --adjust-extension -
 wget --recursive --no-host-directories --directory-prefix=. --adjust-extension --timeout=30 --no-parent --convert-links https://adsight.ca/blog/sitemap-tags.xml
 
 # Replace localhost with domain
-LC_ALL=C find . -type f -not -wholename *.git* -exec sed -i '' -e 's/http:\/\/adsight.ca/blog/https:\/\/adsight.ca\/blog/g' {} +
-LC_ALL=C find . -type f -not -wholename *.git* -exec sed -i '' -e 's/adsight.ca/blog/adsight.ca\/blog/g' {} +
-LC_ALL=C find . -type f -not -wholename *.git* -exec sed -i '' -e 's/http:\/\/www.gravatar.com/https:\/\/www.gravatar.com/g' {} +
+#LC_ALL=C find . -type f -not -wholename *.git* -exec sed -i '' -e 's/http:\/\/adsight.ca/blog/https:\/\/adsight.ca\/blog/g' {} +
+#LC_ALL=C find . -type f -not -wholename *.git* -exec sed -i '' -e 's/adsight.ca/blog/adsight.ca\/blog/g' {} +
+#LC_ALL=C find . -type f -not -wholename *.git* -exec sed -i '' -e 's/http:\/\/www.gravatar.com/https:\/\/www.gravatar.com/g' {} +
 
 # Set up Github Pages CNAME
