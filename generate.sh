@@ -7,6 +7,7 @@ to_https=true
 
 # clean up
 rm -rf static
+ls | grep -v generate.sh | xargs rm -rf
 
 # Copy blog content
 wget --recursive --no-host-directories --directory-prefix=static --adjust-extension --timeout=30 --no-parent --convert-links ${from_url}/
