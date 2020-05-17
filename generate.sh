@@ -40,7 +40,7 @@ LC_ALL=C find ./static -type f -not -wholename *.git* -exec sed -i '' -e "s,.jpg
 LC_ALL=C find ./static -type f -not -wholename *.git* -exec sed -i '' -e "s,.jpjpg,.jpg,g" {} +
 
 # Set up Github Pages CNAME
-echo "${to_url}" > static/CNAME
+# echo "${to_url}" > static/CNAME
 
 cp -R ./static/* ./
 rm -rf static
