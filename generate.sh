@@ -41,9 +41,21 @@ LC_ALL=C find ./static -type f -not -wholename *.git* -exec sed -i '' -e "s,.jpg
 LC_ALL=C find ./static -type f -not -wholename *.git* -exec sed -i '' -e "s,.jpjpg,.jpg,g" {} +
 LC_ALL=C find ./static -type f -not -wholename *.git* -exec sed -i '' -e "s,.jpgpg,.jpg,g" {} +
 
+LC_ALL=C find ./static -type f -not -wholename *.git* -exec sed -i '' -e "s,=\"\/content,=\"content,g" {} +
+
 
 LC_ALL=C find ./static -type f -not -wholename *.git* -exec sed -i '' -e "s,Ghost,adsight,g" {} +
 LC_ALL=C find ./static -type f -not -wholename *.git* -exec sed -i '' -e "s,ghost.org,adsight.ca,g" {} +
+
+
+LC_ALL=C find ./static -type f -not -wholename *.git* -exec sed -i '' -e "s,Published with,,g" {} +
+
+# compensate for some crawling bug that does not download w300
+LC_ALL=C find ./static -type f -not -wholename *.git* -exec sed -i '' -e "s,size\/w300,size\/w600,g" {} +
+
+
+
+
 
 # Set up Github Pages CNAME
 # echo "${to_url}" > static/CNAME
